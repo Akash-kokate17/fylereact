@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import TaxCalculator from './components/taxcal/TaxCalculator';
+import React from "react";
+import "./App.css";
+import TaxCalculator from "./components/taxcal/TaxCalculator";
 
 function App() {
-  return (
-    <TaxCalculator/>
-  );
+  return <TaxCalculator />;
 }
 
 export default App;

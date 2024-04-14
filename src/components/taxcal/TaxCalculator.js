@@ -16,7 +16,7 @@ export const TaxCalculator = () => {
 
   useEffect(() => {
     focusRef.current.focus();
-  },[]);
+  }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -44,7 +44,8 @@ export const TaxCalculator = () => {
       return;
     }
     // Calculate total income after deductions
-    const totalIncome = Number(income) + Number(extraIncome) - Number(deductionsAmt);
+    const totalIncome =
+      Number(income) + Number(extraIncome) - Number(deductionsAmt);
 
     // Calculate tax based on age and income
     let taxAmount = 0;
@@ -58,6 +59,8 @@ export const TaxCalculator = () => {
           break;
         case userAge >= 60:
           taxAmount = 0.1 * (totalIncome - 800000);
+          break;
+        default:
           break;
       }
     }
