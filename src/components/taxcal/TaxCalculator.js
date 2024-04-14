@@ -38,7 +38,7 @@ export const TaxCalculator = () => {
       isNaN(deductionsAmt)
     ) {
       Swal.fire({
-        title: "Fill the field using numbers",
+        title: "Fill all the field using numbers",
         icon: "question",
       });
       return;
@@ -84,7 +84,7 @@ export const TaxCalculator = () => {
   };
 
   return (
-    <div className="col-sm-12 col-md-12 col-lg-12 d-flex flex-column align-items-center justify-content-center width-100 vh-100">
+    <div className="col-sm-12 col-md-12 col-lg-12 d-flex flex-column align-items-center justify-content-center width-100 vh-100 overflow-scroll">
       <div className="d-flex flex-column border border-2 rounded-3 p-4">
         <form className="form">
           <div className="d-flex flex-column">
